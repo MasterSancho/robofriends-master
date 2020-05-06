@@ -9,7 +9,7 @@ export const searchRobots = (state = initialState, action) => {
     case CHANGE_SEARCH_FIELD:
       return {
         ...state,
-        payload: text
+        searchField: action.payload
       };
     default:
       return state;
